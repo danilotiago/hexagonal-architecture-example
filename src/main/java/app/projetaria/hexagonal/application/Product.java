@@ -16,6 +16,7 @@ public class Product implements IProduct {
 	private BigDecimal price;
 	
 	public Product() {
+		this.id = UUID.randomUUID();
 		this.status = StatusEnum.DISABLE;
 	}
 
